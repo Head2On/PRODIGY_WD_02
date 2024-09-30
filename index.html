@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stopwatch">
+        <div class="time-display">
+            <div class="time-unit">
+                <span id="hours">00</span>
+                <span class="label">hr</span>
+            </div>
+            <span class="separator">:</span>
+            <div class="time-unit">
+                <span id="minutes">00</span>
+                <span class="label">min</span>
+            </div>
+            <span class="separator">:</span>
+            <div class="time-unit">
+                <span id="seconds">00</span>
+                <span class="label">sec</span>
+            </div>
+            <span class="separator">.</span>
+            <div class="time-unit">
+                <span id="milliseconds">00</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn start-btn" id="start"><i class="bx bx-play"></i></button>
+            <button id="lap" class="btn lap-btn" style="opacity: 0.6; pointer-events: none;"><i class='bx bxs-flag'></i></button>
+            <button id="reset" class="btn reset-btn" style="pointer-events: none;"><i class='bx bx-revision'></i></button>
+        </div>
+        <br>
+        <hr class="divider">
+        <div id="lapsContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

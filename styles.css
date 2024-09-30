@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+    font-family: 'Kanit', sans-serif;
+}
+
+.stopwatch {
+    text-align: center;
+}
+
+.time-display {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    transition: all 0.1s ease;
+}
+
+.separator {
+    font-size: 70px;
+    color: #25b6eb;
+    font-weight: bold;
+    font-style: oblique;
+    margin: 0 5px;
+}
+
+.time-unit {
+    display: flex;
+    transition: all 0.1s ease;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-unit span#hours,
+.time-unit span#minutes,
+.time-unit span#seconds,
+.time-unit span#milliseconds {
+    font-size: 5rem;
+    color: #d3caca;
+}
+
+.time-unit .label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #bdb9b9;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #151313;
+    background-color: #666565;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-btn {
+    font-weight: bold;
+    transition: all 0.3s ease;
+    background-color: #2b95eb;
+}
+
+.start-btn:hover {
+    transform: scale(1.1);
+}
+
+.btn:active {
+    opacity: 0.8;
+}
+
+.lap-btn,
+.reset-btn {
+    opacity: 0.6;
+    pointer-events: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.divider {
+    border: none;
+    border-top: 3px solid #ccc;
+    display: flex;
+    gap: 20px;
+}
+
+#lapsContainer {
+    text-align: justify;
+    margin-top: 20px;
+}
